@@ -7,8 +7,6 @@ Created on Sun Mar 25 21:55:55 2018
 """
 
 import pandas as pd
-import os
-os.chdir('/Users/ayx/Documents/Trading/CryptoCoin/Gdax')
 import importlib
 
 
@@ -30,16 +28,7 @@ print('current time: ' + datetime.datetime.fromtimestamp(end_ts/1000).strftime('
 
 end_iso=datetime.datetime.fromtimestamp(end_ts/1000).isoformat()
 
-#start_ts=end_ts-100000000
-#start_iso=datetime.datetime.fromtimestamp(start_ts/1000).isoformat()
-#start = "2018-3-24"
-#start_iso=datetime.datetime.strptime(start, '%Y-%m-%d').isoformat()
 
-#candledata=public_client.get_product_historic_rates('ETH-USD', start=start_iso, end=end_iso,granularity=900)
-# fifteen minutes interval 
-# https://docs.gdax.com/#get-historic-rates
-
-#df=pd.DataFrame(candledata)
 
 df=pd.DataFrame()
 inter_ts=100000000
