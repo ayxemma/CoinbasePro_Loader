@@ -17,9 +17,9 @@ import datetime
 
 import gdax
 public_client = gdax.PublicClient()
-key='e3ad1932ee76f3f9b64b75a439c0d17a'
-b64secret='QDDV7SVr6ahxskOfX38Wj9IyeUpx/5y6qnOCVXe9ys2q4kMKhKegxTYk7M23oJ/E0B62q019F29vfAiAxQzJxA=='
-passphrase='fo9uk36tdjl'
+key=''
+b64secret=''
+passphrase=''
 auth_client = gdax.AuthenticatedClient(key, b64secret, passphrase)
 
 symbol=input("Input your trading pair(e.g. ETH-USD): ")
